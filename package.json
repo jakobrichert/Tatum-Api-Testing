@@ -1,0 +1,48 @@
+{
+  "name": "tatum-crypto-wallet-manager",
+  "version": "1.0.0",
+  "description": "A comprehensive cryptocurrency wallet generator and manager using Tatum API. Supports multiple blockchains including Bitcoin, Ethereum, Litecoin, and more.",
+  "main": "src/index.js",
+  "bin": {
+    "tatum-wallet": "./src/cli.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "cli": "node src/cli.js",
+    "generate": "node src/wallet-generator.js",
+    "test": "node examples/test-wallets.js"
+  },
+  "keywords": [
+    "tatum",
+    "blockchain",
+    "cryptocurrency",
+    "wallet",
+    "bitcoin",
+    "ethereum",
+    "crypto",
+    "web3",
+    "wallet-generator",
+    "btc",
+    "eth",
+    "ltc"
+  ],
+  "author": "Jakob Richert <jakob.richert2@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jakobrichert/Tatum-Api-Testing"
+  },
+  "dependencies": {
+    "@tatumio/tatum": "^2.0.0",
+    "chalk": "^4.1.2",
+    "commander": "^9.0.0",
+    "dotenv": "^16.0.0",
+    "inquirer": "^8.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
